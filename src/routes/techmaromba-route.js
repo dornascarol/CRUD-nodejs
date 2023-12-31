@@ -1,4 +1,7 @@
 //TODO: Importar o express, o controller e instanciar o Router para chamar os metodos HTTP passando o endereço e função do CRUD referente 
+
+const { findAll, addNew, update, clear } = require("../controllers/techmaromba-controller")
+
 const express = require("express")
 
 const router = express.Router()
