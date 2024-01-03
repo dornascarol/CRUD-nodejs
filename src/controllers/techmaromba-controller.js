@@ -1,4 +1,5 @@
 //TODO: Importar o Model e criar as funções que vão realizar as operações do CRUD
+const TechMaromba = require("../models/TechMaromba")
 
 const findAll = async (request, response) => {
     try {
