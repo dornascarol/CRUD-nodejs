@@ -50,7 +50,14 @@ npm start
 
 
 ## Endpoints
-<p> Caminho da URL: http://localhost:3333 </p>
+<p> Caminho da URL: http://localhost:3333/techmaromba </p>
+
+| Método | URL             | Descrição                                                                                                                                                                                         |
+| ------ | --------------  | ------------------------------------------------------------------------------------------------------                                                                                            |
+| GET    | /all        | Encontra todas as Tech Marombas no banco de dados. E retorna um JSON da lista com todos os dados das Tech Marombas. |
+| POST   | /add        | Adiciona uma nova Tech Maromba usando as informações enviadas dentro do arquivo `request.body`. |
+| PATCH  | /update/:id | Atualiza algum dado específico da Tech Maromba a partir do `id` escrito e usando o arquivo `request.body`. |
+| DELETE | /clear/:id  | Deleta alguma Tech Maromba a partir do `id` escrito. | 
 
 
 ## Status do projeto
