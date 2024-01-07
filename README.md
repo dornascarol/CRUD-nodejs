@@ -137,6 +137,19 @@ npm start
   - Retorna o(s) motivo(s) do(s) erro(s) no formato JSON: `{ message: error.message }`
   - Mostra o erro no console
 
+## Modelagem dos dados
+
+Dados que uma Tech Maromba possui:
+
+| Descrição                 | Tipo |
+| -------------------- | ------------------ |
+| id                   | `String` |
+| name                 | `String` |
+| description          | `String` |
+| urlProfile           | `String` |
+| urlImage             | `String` |
+| createdAt            | `Date` |
+
 
 ## Status do projeto
 :construction: Aplicação em andamento.
