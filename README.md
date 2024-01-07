@@ -122,5 +122,21 @@ npm start
     
 ~
 
+##### Função clear:
+
+- Encontra a Tech Maromba pelo _id_ e deleta
+  
+- Deletando a Tech Maromba com _sucesso_:
+
+  - Responde status HTTP com o código `200` (OK)
+  - Retorna o seguinte JSON: `{ message: 'O id ${id} foi deletado' }`
+ 
+- Se _não deletar_ a Tech Maromba:
+
+  - Responde status HTTP com o código `500` (Internal Server Error)
+  - Retorna o(s) motivo(s) do(s) erro(s) no formato JSON: `{ message: error.message }`
+  - Mostra o erro no console
+
+
 ## Status do projeto
 :construction: Aplicação em andamento.
