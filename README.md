@@ -75,6 +75,28 @@ npm start
      
 ~
 
+##### Função addNew:
+
+- Informações para o _request.body_:
+  
+  - Body: `{ name, description, urlProfile, urlImage }`
+
+- Dados para o _banco de dados_:
+  
+  - `{ name, description, urlProfile, urlImage, createdAt: new Date() }`
+
+- Adicionando uma nova Tech Maromba com _sucesso_:
+
+  - Responde status HTTP com o código `201` (Created)
+  - Retorna o seguinte JSON: `{ techmaromba: result }`
+
+- Se _não adicionar_ a Tech Maromba:
+
+  - Responde status HTTP com o código `500` (Internal Server Error)
+  - Retorna o(s) motivo(s) do(s) erro(s) no formato JSON: `{ error.message }`
+  - Mostra o erro no console
+ 
+~
 
 ## Status do projeto
 :construction: Aplicação em andamento.
