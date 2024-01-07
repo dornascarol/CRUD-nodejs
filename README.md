@@ -98,5 +98,29 @@ npm start
  
 ~
 
+##### Função update:
+
+- Encontra a Tech Maromba pelo _id_
+ 
+- Atualizando informações da Tech Maromba _encontrada_:
+  
+  - Em request.body: `{ techmarombaFound.name = request.body.name }`
+  - Em request.body: `{ techmarombaFound.description = request.body.description }`
+  - Em request.body: `{ techmarombaFound.urlProfile = request.body.urlProfile }`
+  - Em request.body: `{ techmarombaFound.urlImage = request.body.urlImage }`
+
+- Mostrando a atualização com _sucesso_:
+
+  - Responde status HTTP com o código `200` (OK)
+  - Retorna o JSON com a Tech Maromba alterada
+ 
+- Se _não atualizar_ a Tech Maromba:
+
+  - Responde status HTTP com o código `500` (Internal Server Error)
+  - Retorna a mensagem no formato JSON: `{ message: 'Não foi possível atualizar' }`
+  - Mostra o erro no console
+    
+~
+
 ## Status do projeto
 :construction: Aplicação em andamento.
