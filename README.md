@@ -22,7 +22,6 @@ O objetivo é criar um sistema para disponibilizar uma lista com as pessoas que 
 Na aplicação foi utilizado o <a href="https://nodejs.org/en/download" target="_blank" > Node.JS </a>  na versão 18.14.0 em LTS.
 
 
-
 ## Dependências 
 Framework Express na versão 4.18.2 
 
@@ -37,7 +36,6 @@ Biblioteca Nodemon na versão 3.0.2
 Documentação Swagger-autogen na versão 2.23.7
 
 Documentação Swagger-ui-express na versão 5.0.0
-
 
 
 ## Rodando o projeto
@@ -58,6 +56,24 @@ npm start
 | POST   | /add        | Adiciona uma nova Tech Maromba usando as informações enviadas dentro do arquivo `request.body`. |
 | PATCH  | /update/:id | Atualiza algum dado específico da Tech Maromba a partir do `id` escrito e usando o arquivo `request.body`. |
 | DELETE | /clear/:id  | Deleta alguma Tech Maromba a partir do `id` escrito. | 
+
+
+## Controllers
+
+##### Função findAll:
+
+- Encontrando as Tech Marombas com _sucesso_:
+
+  - Responde status HTTP com o código `200` (OK)
+  - Retorna o JSON com uma lista
+
+- Se _não encontrar_ a lista:
+
+  - Responde status HTTP com o código `500` (Internal Server Error)
+  - Retorna o(s) motivo(s) do(s) erro(s) no formato JSON: `{ message: error.message }`
+  - Mostra o erro no console
+     
+~
 
 
 ## Status do projeto
