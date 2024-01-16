@@ -21,6 +21,9 @@ O objetivo é criar um sistema para disponibilizar uma lista com as pessoas que 
 ## Ferramentas
 Na aplicação foi utilizado o <a href="https://nodejs.org/en/download" target="_blank" > Node.JS </a>  na versão 18.14.0 em LTS.
 
+Na aplicação foi utilizado o <a href="https://www.mongodb.com/pt-br/atlas" target="_blanl" > MongoDB Atlas </a> na nuvem AWS.
+
+Na aplicação foi utilizado o <a href="https://swagger.io/specification/v2/" target="_blank" > Swagger OpenAPI </a> na versão 2.0.0
 
 ## Dependências 
 Framework Express na versão 4.18.2 
@@ -45,10 +48,25 @@ Documentação Swagger-ui-express na versão 5.0.0
 ```
 npm start
 ```
+- Parar de rodar o servidor: no terminal clicar nas teclas de "Ctrl" e "C".
 
+- Caminho da URL para o banco de dados:
+```
+http://localhost:3333/techmaromba
+```
+
+- Precisa do servidor rodando para o Swagger funcionar.
+
+- Para realizar a construção automática da documentação Swagger:
+```
+npm run swagger-autogen
+```
+- Caminho da URL para o Swagger:
+```
+ http://localhost:3333/doc/
+```
 
 ## Endpoints
-<p> Caminho da URL: http://localhost:3333/techmaromba </p>
 
 | Método | URL             | Descrição                                                                                                                                                                                         |
 | ------ | --------------  | ------------------------------------------------------------------------------------------------------                                                                                            |
@@ -152,4 +170,4 @@ Dados que uma Tech Maromba possui:
 
 
 ## Status do projeto
-:construction: Aplicação em andamento.
+:heavy_check_mark: Aplicação finalizada.
